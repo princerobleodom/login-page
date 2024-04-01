@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dashboard, <?php echo $_SESSION['username']; ?>!</h1>
+        
+        <!-- Example: Display recent posts -->
+        <div class="post-feed">
+            <h2>Recent Posts</h2>
+            <!-- Code to display recent posts from the database -->
+        </div>
+
+        <!-- Example: Post Form -->
+        <div class="post-form">
+            <h2>Create a New Post</h2>
+            <form action="post.php" method="post">
+                <textarea name="postContent" placeholder="Write your post here" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+
+        <!-- Example: Notification Section -->
+        <div class="notifications">
+            <h2>Notifications</h2>
+            <!-- Code to display notifications -->
+        </div>
+
+        <!-- Example: Logout Button -->
+        <div class="logout">
+            <form action="logout.php" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
